@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="mainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ilkerkeklik.favorifilmlerim.Controller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="closeButton" mnemonicParsing="false" onAction="#closeButtonClicked" text="Close" />
+                  <MenuItem fx:id="addMovieButton" mnemonicParsing="false" onAction="#addMovieButtonClicked" text="Add Movie" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonClicked" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="aboutButton" mnemonicParsing="false" onAction="#aboutButtonClicked" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <right>
+      <JFXListView fx:id="listView" onMouseClicked="#filmSecildi" prefHeight="574.0" prefWidth="358.0" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <Pane prefHeight="574.0" prefWidth="537.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea id="textArea" fx:id="textArea" layoutX="6.0" prefHeight="573.0" prefWidth="531.0" style="-fx-border-color: blue;" />
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

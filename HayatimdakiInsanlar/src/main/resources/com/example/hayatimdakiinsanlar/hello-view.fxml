@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" stylesheets="@stil.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hayatimdakiinsanlar.Controller">
+   <children>
+      <Label fx:id="topLabel" alignment="CENTER" layoutX="7.0" layoutY="14.0" onMouseClicked="#listeyiYazdir" prefHeight="75.0" prefWidth="1067.0" text="Hayatimdaki Insanlar Uygulamasi" textFill="#2e4fc7">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="benKimimLabel" alignment="TOP_LEFT" layoutX="14.0" layoutY="89.0" onMouseClicked="#benKimimYazdir" prefHeight="274.0" prefWidth="262.0" style="-fx-background-color: #eae3e3;" text="Ben Kimim" textFill="#0b0a0a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tamListaLabel" alignment="TOP_LEFT" layoutX="281.0" layoutY="99.0" onMouseClicked="#listeyiYazdir" prefHeight="598.0" prefWidth="799.0" style="-fx-background-color: #eae3e3;" text="Tam Liste">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="389.0" prefHeight="18.0" prefWidth="82.0" style="-fx-background-color: #eae3e3;" text=" Isim Giriniz : " />
+      <Label layoutX="23.0" layoutY="428.0" prefHeight="18.0" prefWidth="82.0" style="-fx-background-color: #eae3e3;" text="Meslek Giriniz : " />
+      <Label layoutX="23.0" layoutY="471.0" prefHeight="18.0" prefWidth="82.0" style="-fx-background-color: #eae3e3;" text="Yas Giriniz : " />
+      <Label layoutX="23.0" layoutY="545.0" prefHeight="18.0" prefWidth="82.0" style="-fx-background-color: #eae3e3;" text="Neyiniz olur ? " />
+      <Label layoutX="23.0" layoutY="511.0" prefHeight="18.0" prefWidth="82.0" style="-fx-background-color: #eae3e3;" text="Sehir Giriniz : " />
+      <TextField fx:id="inputIsim" layoutX="117.0" layoutY="386.0" promptText="ex.Ilker" />
+      <TextField fx:id="inputMeslek" layoutX="118.0" layoutY="425.0" promptText="ex.Muhendis" />
+      <TextField fx:id="inputSehir" layoutX="117.0" layoutY="507.0" promptText="ex.Adana" />
+      <TextField fx:id="inputYas" layoutX="117.0" layoutY="467.0" promptText="ex.19" />
+      <TextField fx:id="inputNeyim" layoutX="117.0" layoutY="541.0" promptText="ex.Babam" />
+      <Button fx:id="listeneEkleButon" layoutX="114.0" layoutY="582.0" mnemonicParsing="false" onAction="#listeneEkleButonunaBasildi" prefHeight="26.0" prefWidth="150.0" text="Listene Ekle" />
+      <Button fx:id="cikisButonu" layoutX="9.0" layoutY="14.0" mnemonicParsing="false" onAction="#cikisButonunaBasildi" prefHeight="39.0" prefWidth="127.0" style="-fx-background-color: black;" text="Cikis" textFill="#ea1d1d">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="mesajLabel" alignment="TOP_LEFT" layoutX="9.0" layoutY="608.0" prefHeight="50.0" prefWidth="338.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="listeyiTemizleButon" layoutX="18.0" layoutY="582.0" mnemonicParsing="false" onAction="#listeyiTemizleButonunaBasildi" text="Listeyi Temizle" />
+      <TextField fx:id="silinenTextField" layoutX="9.0" layoutY="621.0" prefHeight="26.0" prefWidth="101.0" promptText="Kaçıncı?" />
+      <Button fx:id="listedenSilButonu" layoutX="145.0" layoutY="621.0" mnemonicParsing="false" onAction="#listedenSilBasildi" prefHeight="26.0" prefWidth="113.0" text="Listeden Sil" />
+   </children>
+</AnchorPane>

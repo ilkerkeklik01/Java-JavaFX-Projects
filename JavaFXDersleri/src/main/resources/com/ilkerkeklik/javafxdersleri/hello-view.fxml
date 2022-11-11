@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@stil.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ilkerkeklik.javafxdersleri.Controller">
+   <children>
+      <JFXButton id="BanaTikla" layoutX="149.0" layoutY="79.0" onAction="#banaTiklaMetotu" text="Bana Tikla" textFill="#ece7e7">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="349.0" layoutY="82.0" onAction="#banaTiklaMetotu" style="-fx-background-color: green;" text="BanaTikla2" textFill="#201a1a">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="37.0" layoutY="82.0" onAction="#banaTiklaMetotu" styleClass="btnSelam" text="Selam" textFill="#dcd7d7">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="textField" layoutX="46.0" layoutY="160.0" onKeyReleased="#metinGirildi" prefHeight="26.0" prefWidth="283.0" promptText="Adinizi Griniz" />
+      <Button fx:id="merhabaButonu" layoutX="46.0" layoutY="224.0" mnemonicParsing="false" onAction="#turuncuButon" prefHeight="48.0" prefWidth="114.0" style="-fx-background-color: #ff6600;" text="Merhaba" />
+      <Button fx:id="hoscakalButonu" layoutX="203.0" layoutY="224.0" mnemonicParsing="false" onAction="#turuncuButon" prefHeight="48.0" prefWidth="126.0" style="-fx-background-color: #ff6600;" text="Hoscakal" />
+      <Label fx:id="label" alignment="CENTER" layoutX="42.0" layoutY="281.0" prefHeight="124.0" prefWidth="237.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkBox" layoutX="408.0" layoutY="144.0" mnemonicParsing="false" onAction="#secenekSecildi" prefHeight="84.0" prefWidth="249.0" text="Isaretliyse Sil" />
+      <ListView fx:id="listView" layoutX="36.0" layoutY="327.0" prefHeight="259.0" prefWidth="249.0" />
+      <Label alignment="CENTER" layoutX="60.0" layoutY="276.0" prefHeight="48.0" prefWidth="200.0" text="List View" />
+      <TextArea fx:id="textArea" layoutX="450.0" layoutY="305.0" prefHeight="259.0" prefWidth="344.0" style="-fx-background-color: grey;" />
+      <Label alignment="CENTER" layoutX="544.0" layoutY="257.0" prefHeight="48.0" prefWidth="200.0" text="Text Area" />
+      <Button fx:id="tasiButonu" layoutX="318.0" layoutY="390.0" mnemonicParsing="false" onAction="#listeElemanlariniTasi" text="SecilenleriTasi" />
+   </children>
+</Pane>

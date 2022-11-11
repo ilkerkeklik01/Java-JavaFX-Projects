@@ -1,0 +1,15 @@
+#root{
+-fx-background-color: white;
+
+
+}
+#BanaTikla{
+-fx-background-color: red;
+-fx-text-fill: yellow;
+
+}
+
+.btnSelam{
+-fx-background-color: yellow;
+-fx-text-fill: black;
+}

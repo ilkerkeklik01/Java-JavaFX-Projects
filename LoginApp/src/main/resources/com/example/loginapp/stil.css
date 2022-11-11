@@ -1,0 +1,20 @@
+#anchorpane{
+
+-fx-background-image: url("backimage.jpg");
+-fx-background-size: cover;
+
+}
+#label{
+-fx-background-color: white;
+-fx-text-fill: orange;
+
+}
+#pane{
+-fx-background-color: white;
+
+
+}
+#loginbutton{
+
+-fx-text-fill: orange;
+}

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Main-Class: com.example.hayatimdakiinsanlar.Launcher
+Class-Path: validatorfx-0.3.1.jar heatmap-17.0.9.jar ikonli-core-12.3.1.
+ jar jackson-annotations-2.12.1.jar tilesfx-17.1.9.jar javafx-base-18.0.
+ 1-win.jar jackson-databind-2.12.1.jar fxgl-scene-17.1.jar fxgl-gameplay
+ -17.1.jar kotlin-stdlib-1.5.32-modular.jar lifecycle-4.0.13.jar javafx-
+ controls-18.0.1.jar jackson-core-2.12.1.jar fxgl-core-17.1.jar storage-
+ 4.0.13.jar javafx-base-18.0.1.jar countries-17.0.22.jar javafx-media-18
+ .0.1-win.jar javafx-controls-18.0.1-win.jar kotlin-stdlib-common-1.5.32
+ .jar javafx-media-18.0.1.jar javafx-fxml-18.0.1.jar util-4.0.13.jar jav
+ afx-graphics-18.0.1-win.jar toolbox-17.0.22.jar fxgl-entity-17.1.jar an
+ notations-13.0.jar javafx-graphics-18.0.1.jar javafx-web-18.0.1-win.jar
+  ikonli-javafx-12.3.1.jar javafx-web-18.0.1.jar fxgl-17.1.jar bootstrap
+ fx-core-0.4.0.jar audio-4.0.13.jar toolboxfx-17.0.28.jar javafx-fxml-18
+ .0.1-win.jar fxgl-io-17.1.jar controlsfx-11.1.1.jar formsfx-core-11.5.0
+ .jar
+
