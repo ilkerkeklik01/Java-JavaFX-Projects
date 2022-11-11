@@ -59,6 +59,7 @@ public class Controller implements Initializable {
         listeSilMenusu.getItems().add(filmSil);
         listView.setContextMenu(listeSilMenusu);
 
+        textArea.setEditable(false);
 
 
 
